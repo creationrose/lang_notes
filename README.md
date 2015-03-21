@@ -77,3 +77,41 @@ book = Book.new({:title => "Harry Potter", :author => "J.K. Rowling", :num_pages
 The hash rockets are used in older versions of Ruby, but since 1.9 I believe, the colons in front are valid.  Of course it's much easier to distinguish between symbols and the hash if you use the hash rocket. 
 
 You will find in a lot of rails app that they use a colon instead of hash rocket. 
+
+
+#Extending objects in javascript
+
+
+```javascript
+
+// The constructor function
+
+function PaperBack(title, author, numPages, cover) {
+  Book.call(this, title, author, numPages);
+  this.cover = cover;
+}
+
+
+// Extending the Book object
+
+PaperBack.prototype = Object.create(Book.prototype);
+
+
+// A new method on this object
+
+PaperBack.prototype.burn = function() {
+  console.log("You burned " + this.numPages + " pages!");
+  this.numPages = 0;
+}
+
+Totally made up from now. 
+
+
+// Instantiating a new object
+
+var paperback = new PaperBack("1984", "George Orwell", 250, "cover.jpg");
+
+paperback.read();
+paperback.burn();
+
+```
