@@ -44,10 +44,7 @@ function Book(config) {
   this.numPages = config.numPages;
 }
 
-var book = new Book({
-    title: "Harry Potter",
-    author: "J.K. Rowling",
-    numPages: 800});
+var book = new Book({title: "Harry Potter", author: "J.K. Rowling", numPages: 800});
 
 
 ```  
