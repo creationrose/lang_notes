@@ -42,7 +42,6 @@ function Book(config) {
   this.title = config.title;
   this.author = config.author;
   this.numPages = config.numPages;
-  this.currentPage = 0;
 }
 
 var book = new Book({
