@@ -81,6 +81,10 @@ You will find in a lot of rails app that they use a colon instead of hash rocket
 
 #Extending objects in javascript
 
+This is a little more advanced so you don't need to worry about it right now. 
+
+IT's mostly here for my own reference. 
+
 
 ```javascript
 
@@ -103,8 +107,6 @@ PaperBack.prototype.burn = function() {
   console.log("You burned " + this.numPages + " pages!");
   this.numPages = 0;
 }
-
-Totally made up from now. 
 
 
 // Instantiating a new object
